@@ -4,8 +4,6 @@ import org.spring.eurder.order_managment_app.customer.dto.CreateCustomerDTO;
 import org.spring.eurder.order_managment_app.customer.dto.CustomerDTO;
 import org.spring.eurder.order_managment_app.customer.service.CustomerService;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

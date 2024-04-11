@@ -3,11 +3,11 @@ package org.spring.eurder.order_managment_app.customer.dto;
 import org.spring.eurder.order_managment_app.customer.model.Address;
 
 public class CreateCustomerDTO {
-    private String firstName;
-    private String lastName;
-    private String email;
-    private AddressDTO address;
-    private String phoneNumber;
+    private final String firstName;
+    private final String lastName;
+    private final String email;
+    private final AddressDTO address;
+    private final String phoneNumber;
 
 
     public CreateCustomerDTO(String firstName, String lastName, String email, AddressDTO address, String phoneNumber) {

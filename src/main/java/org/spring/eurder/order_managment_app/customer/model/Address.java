@@ -1,10 +1,10 @@
 package org.spring.eurder.order_managment_app.customer.model;
 
 public class Address {
-    private String street;
-    private String houseNumber;
-    private String city;
-    private String postalCode;
+    private final String street;
+    private final String houseNumber;
+    private final String city;
+    private final String postalCode;
 
 
     public Address(String street, String houseNumber, String city, String postalCode) {

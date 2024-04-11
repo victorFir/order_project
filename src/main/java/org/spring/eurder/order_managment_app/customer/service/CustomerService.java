@@ -10,12 +10,9 @@ public class CustomerService {
     private final CustomerRepository customerRepository;
     private final CustomerMapper customerMapper;
 
-    private final AddressMapper addressMapper;
-
-    public CustomerService(CustomerRepository customerRepository, CustomerMapper customerMapper, AddressMapper addressMapper) {
+    public CustomerService(CustomerRepository customerRepository, CustomerMapper customerMapper) {
         this.customerRepository = customerRepository;
         this.customerMapper = customerMapper;
-        this.addressMapper = addressMapper;
     }
 
     public CustomerDTO createCustomer(CreateCustomerDTO createCustomerDto) {

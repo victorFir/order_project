@@ -5,11 +5,11 @@ import org.spring.eurder.order_managment_app.customer.model.Address;
 
 public class CustomerDTO {
 //    private String customerId;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private AddressDTO address;
-    private String phoneNumber;
+    private final String firstName;
+    private final String lastName;
+    private final String email;
+    private final AddressDTO address;
+    private final String phoneNumber;
 
     public CustomerDTO( String firstName, String lastName, String email, AddressDTO address, String phoneNumber) {
 //        this.customerId = customerId;
