@@ -17,7 +17,8 @@ public class CustomerRepository {
         return customers.values();
     }
 
-    public void addCustomer(Customer customer) {
+    public Customer addCustomer(Customer customer) {
         customers.put(customer.getCustomerId(), customer);
+        return customer;
     }
 }

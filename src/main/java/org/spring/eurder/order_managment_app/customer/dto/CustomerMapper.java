@@ -14,4 +14,15 @@ public class CustomerMapper {
                 createCustomerDTO.getPhoneNumber()
         );
     }
+
+    public CustomerDTO mapToDto(Customer customer) {
+        return new CustomerDTO(
+                customer.getCustomerId(),
+                customer.getFirstName(),
+                customer.getLastName(),
+                customer.getEmail(),
+                customer.getAddress(),
+                customer.getPhoneNumber()
+        );
+    }
 }
