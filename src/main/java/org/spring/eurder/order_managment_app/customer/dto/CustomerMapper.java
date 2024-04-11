@@ -5,12 +5,18 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CustomerMapper {
+
+    private final AddressMapper addressMapper;
+
+    public CustomerMapper(AddressMapper addressMapper) {
+        this.addressMapper = addressMapper;
+    }
     public Customer mapToCustomer(CreateCustomerDTO createCustomerDTO) {
         return new Customer(
                 createCustomerDTO.getFirstName(),
                 createCustomerDTO.getLastName(),
                 createCustomerDTO.getEmail(),
-                createCustomerDTO.getAddress(),
+                addressMapper.mapToAddress(createCustomerDTO.getAddress()),
                 createCustomerDTO.getPhoneNumber()
         );
     }
@@ -21,7 +27,7 @@ public class CustomerMapper {
                 customer.getFirstName(),
                 customer.getLastName(),
                 customer.getEmail(),
-                customer.getAddress(),
+                addressMapper.mapToDto(customer.getAddress()),
                 customer.getPhoneNumber()
         );
     }

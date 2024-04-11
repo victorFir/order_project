@@ -8,15 +8,35 @@ public class CustomerDTO {
     private String firstName;
     private String lastName;
     private String email;
-    private Address address;
+    private AddressDTO address;
     private String phoneNumber;
 
-    public CustomerDTO( String firstName, String lastName, String email, Address address, String phoneNumber) {
+    public CustomerDTO( String firstName, String lastName, String email, AddressDTO address, String phoneNumber) {
 //        this.customerId = customerId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.address = address;
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public AddressDTO getAddress() {
+        return address;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 }

@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/home")
+@RequestMapping("/customer")
 public class CustomerController {
     private final CustomerService customerService;
 
@@ -17,9 +17,9 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-    @PostMapping(path = "/addCustomer", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<CustomerDTO> newCustomer(@RequestBody CreateCustomerDTO createCustomerDTO) {
-        return new ResponseEntity<>(customerService.createCustomer(createCustomerDTO), HttpStatus.CREATED);
+    public CustomerDTO newCustomer(@RequestBody CreateCustomerDTO createCustomerDTO) {
+        return customerService.createCustomer(createCustomerDTO);
     }
 }

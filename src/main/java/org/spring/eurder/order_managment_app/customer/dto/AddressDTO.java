@@ -1,13 +1,13 @@
-package org.spring.eurder.order_managment_app.customer.model;
+package org.spring.eurder.order_managment_app.customer.dto;
 
-public class Address {
+public class AddressDTO {
     private String street;
     private String houseNumber;
     private String city;
     private String postalCode;
 
 
-    public Address(String street, String houseNumber, String city, String postalCode) {
+    public AddressDTO(String street, String houseNumber, String city, String postalCode) {
         this.street = street;
         this.houseNumber = houseNumber;
         this.city = city;

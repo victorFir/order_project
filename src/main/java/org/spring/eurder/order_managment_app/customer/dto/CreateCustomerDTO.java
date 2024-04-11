@@ -6,11 +6,11 @@ public class CreateCustomerDTO {
     private String firstName;
     private String lastName;
     private String email;
-    private Address address;
+    private AddressDTO address;
     private String phoneNumber;
 
 
-    public CreateCustomerDTO(String firstName, String lastName, String email, Address address, String phoneNumber) {
+    public CreateCustomerDTO(String firstName, String lastName, String email, AddressDTO address, String phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -30,7 +30,7 @@ public class CreateCustomerDTO {
         return email;
     }
 
-    public Address getAddress() {
+    public AddressDTO getAddress() {
         return address;
     }
 
