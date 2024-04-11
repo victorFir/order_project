@@ -1,7 +1,6 @@
 package org.spring.eurder.order_managment_app.customer.dto;
 
 import org.spring.eurder.order_managment_app.customer.model.Address;
-import org.springframework.stereotype.Component;
 
 public class CreateCustomerDTO {
     private String firstName;
@@ -9,6 +8,7 @@ public class CreateCustomerDTO {
     private String email;
     private Address address;
     private String phoneNumber;
+
 
     public CreateCustomerDTO(String firstName, String lastName, String email, Address address, String phoneNumber) {
         this.firstName = firstName;
@@ -38,7 +38,4 @@ public class CreateCustomerDTO {
         return phoneNumber;
     }
 
-    @Component
-    public static class CustomerMapper {
-    }
 }
