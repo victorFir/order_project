@@ -3,6 +3,7 @@ package org.spring.eurder.order_managment_app.item.model;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
+import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Repository
@@ -18,5 +19,9 @@ public class ItemRepository {
     public Item addItem(Item item) {
         items.put(item.getItemId(), item);
         return item;
+    }
+
+    public Optional<Item> getItemById(String itemId) {
+        return Optional.ofNullable(items.get(itemId));
     }
 }
