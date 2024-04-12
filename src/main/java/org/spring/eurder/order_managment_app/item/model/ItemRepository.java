@@ -1,8 +1,11 @@
 package org.spring.eurder.order_managment_app.item.model;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 
+@Repository
 public class ItemRepository {
     private ConcurrentHashMap<String, Item> items;
 

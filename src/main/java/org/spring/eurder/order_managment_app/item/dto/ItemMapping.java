@@ -5,12 +5,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ItemMapping {
-    public Item mapToItem (ItemDTO itemDTO) {
+    public Item mapToItem (CreateItemDTO createItemDTO) {
         return new Item(
-                itemDTO.getName(),
-                itemDTO.getDescription(),
-                itemDTO.getPrice(),
-                itemDTO.getAmountInStock()
+                createItemDTO.getName(),
+                createItemDTO.getDescription(),
+                createItemDTO.getPrice(),
+                createItemDTO.getAmountInStock()
         );
     }
 
