@@ -1,7 +1,5 @@
 package org.spring.eurder.order_managment_app.customer.dto;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import org.spring.eurder.order_managment_app.customer.model.Address;
 
 public class CustomerDTO {
 //    private String customerId;

@@ -1,7 +1,5 @@
 package org.spring.eurder.order_managment_app.customer.dto;
 
-import org.spring.eurder.order_managment_app.customer.model.Address;
-
 public class CreateCustomerDTO {
     private final String firstName;
     private final String lastName;
